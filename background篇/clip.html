@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> background-clip开始绘制的位置</title>
+    <style>
+        div.demo{
+            background: url(../img/img1.jpg);
+            width: 100px;
+            height: 100px;
+            padding: 50px;
+            border: 30px dashed #000000;
+            background-color: #FFFFFF;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            background-origin: border-box;
+            /*background-origin：padding|border|content,默认值为padding
+            该属性指定了背景从哪个区域(边框、补白或内容)开始绘制,但也仅仅能控制背景开始绘制的位置，你可以用这个属性在边框上绘制背景，但边框上的背景显不显示出来那就要由background-clip来决定了
+
+            background-clip: border-box; 控制显示，默认值为border-box
+            该属性指定了背景在哪些区域可以显示，但与背景开始绘制的位置无关，背景的绘制的位置可以出现在不显示背景的区域，这时就相当于背景图片被不显示背景的区域裁剪了一部分一样。
+            border,则背景在元素的边框、补白和内容区域都会显示；
+            padding,则背景只会在补白和内容区域显示
+            如果值为content，则背景只会在内容区域显示
+
+            background-repeat的不常见的两个属性：space、round
+                space：根据背景图片的大小，然后通过计算容器的大小来平铺背景，多余的部分用空白来填充，这样的平铺方式是不会出现图片被截成一半的情况
+                round：根据背景图片的大小，然后通过计算容器的大小，压缩图片来填充容器，这样的平铺方式也是不会出现图片截成一半的情况，不过跟background-repeat: space;不同的是这种填充方式不会出现空白的区域，而是会去压缩图片的大小来适应容器，
+            */
+        }
+    </style>
+</head>
+<body>
+<div class="demo"></div>
+</body>
+</html>
