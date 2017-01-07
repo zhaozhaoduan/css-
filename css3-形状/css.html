@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>利用 圆形 和 正方形实现 心形</title>
+	<meta charset='utf-8' />
+	<style type="text/css">
+		.code-wrap {
+		    width: 100%;
+		    border-top: 1px solid #e6e6e6;
+		    border-bottom: 1px solid #e6e6e6;
+		    height: 400px;
+		    margin-bottom: 10px;
+		    position: relative;
+		}
+		.css-live-wrap{
+			position:relative;
+			width:50%;
+			height:100%;
+			float:left;
+		}
+		.heartShaped {
+          position: absolute;
+          top:50%;
+          left: 50%;
+          transform:translate(-50%,-50%) rotate(45deg);
+          background: rgba(255, 20, 147, .85);
+          width: 140px;
+          line-height: 140px;
+          text-align: center;
+          color: white;
+          font-size: 12px;
+        }
+        .heartShaped:before,
+        .heartShaped:after
+         {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -70px;
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          background: rgb(255, 20, 147);
+          z-index: -1;
+        }
+        .heartShaped:after{
+          top: -70px;
+          left: 0;
+        }
+        h1 {
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+}
+	</style>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
+<div class="code-wrap">
+	<div class="css-live-wrap">
+		<hgroup class="heartShaped">
+			<h1>.heartShaped</h1>
+		</hgroup>
+	</div>
+</div>
+</body>
+</html>
