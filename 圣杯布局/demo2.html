@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2栏布局，侧边栏固定在右边，左侧是主体内容栏</title>
+    <style type="text/css">
+        .layout:after, .layout:before {
+            clear: both;
+            content: " ";
+            display: table;
+        }
+        .layout {
+            padding-right: 210px;
+        }
+        .layout__main {
+            width: 100%;
+            float: left;
+        }
+        .layout__aside {
+            float: right;
+            width: 200px;
+            margin-right: -210px;
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <div class="layout__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fuga ipsa non sequi, ullam voluptas. Aperiam architecto at delectus deleniti, eligendi in modi molestiae quas quo quod recusandae totam ullam?</div>
+    <aside class="layout__aside">侧边栏宽度固定</aside>
+</div>
+</body>
+</html>

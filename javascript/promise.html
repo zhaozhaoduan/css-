@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    var isMomHappy = false;
+    var willIGetNewPhone = new Promise(
+            function (resolve, reject) {
+                if (isMomHappy) {
+                    var phone = {
+                        brand: 'iphone',
+                        color: 'black'
+                    };
+                    resolve(phone);
+                } else {
+                    var reason = new Error('mom is not happy');
+                    reject(reason)
+                }
+            }
+    )
+
+//    var showOff = function (phone) {
+//        return new Promise(
+//                function (resolve, reject) {
+//                    var message = 'Hey friend, I have a new' + phone.color + '' + phone.brand + 'phone';
+//                    resolve(message);
+//                }
+//        )
+//    }
+    var showOff = function (phone) {
+        var message = 'Hey friend, I have a new' + phone.color + '' + phone.brand + 'phone';
+        return Promise.resolve(message)
+    }
+
+    var askMom = function () {
+        console.log('before askingMin');
+        willIGetNewPhone
+                .then(showOff)
+                .then(function (fulfilled) {
+                    console.log(fulfilled);
+                })
+                .catch(function (error) {
+                    console.log(error.message);
+                })
+        console.log('after askingMin');
+    }
+
+//    promise是 异步调用，代码将无阻塞运行或等待结果。任何需要等promise的行为放在".then"里面
+    askMom();
+    //    before askingMin
+    //    promise.html:49 after askingMin
+    //    promise.html:47 mom is not happy
+</script>
+</body>
+</html>

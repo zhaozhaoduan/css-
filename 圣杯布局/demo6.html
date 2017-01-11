@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style type="text/css">
+        .layout {
+            display: flex;
+        }
+        .layout__main {
+            flex: 1;
+        }
+        .layout__aside {
+            width: 200px;
+        }
+        .layout > .layout__aside:not(:first-child),
+        .layout > .layout__main:not(:first-child){
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <aside class="layout__aside">侧边栏宽度固定</aside>
+    <div class="layout__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis cumque excepturi facilis illo laboriosam laudantium nam nemo nihil odio officia quidem quis quod, sequi sint soluta ullam, veniam voluptate.</div>
+</div>
+<br/>
+<div class="layout">
+    <div class="layout__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque eaque labore officiis quos reiciendis, sequi veniam? Facilis, iste iusto odit officia placeat similique temporibus voluptate. Alias molestias nesciunt omnis.</div>
+    <aside class="layout__aside">侧边栏宽度固定</aside>
+</div>
+<br/>
+<div class="layout">
+    <aside class="layout__aside">左侧边栏宽度固定</aside>
+    <div class="layout__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi at atque autem consequuntur ea esse illum incidunt libero nihil nisi quas quasi quod repellat sint tempore vitae voluptas, voluptate?</div>
+    <aside class="layout__aside">右侧边栏宽度固定</aside>
+</div>
+<br/>
+<div class="layout">
+    <aside class="layout__aside">第1个侧边栏宽度固定</aside>
+    <aside class="layout__aside">第2个侧边栏宽度固定</aside>
+    <div class="layout__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet architecto at autem blanditiis cum dicta ducimus, excepturi hic laboriosam necessitatibus nesciunt nisi quam qui quis, quos temporibus, vel voluptatum.</div>
+</div>
+<br/>
+<div class="layout">
+    <div class="layout__main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos, ex impedit ipsa laudantium libero magnam, nisi odio officiis omnis possimus quas quia quidem rem sint sit, tempora ut voluptatum?</div>
+    <aside class="layout__aside">第1个侧边栏宽度固定</aside>
+    <aside class="layout__aside">第2个侧边栏宽度固定</aside>
+</div>
+</body>
+</html>
