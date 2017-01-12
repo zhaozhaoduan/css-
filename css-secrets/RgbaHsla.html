@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>半透明边框</title>
+    <style>
+        body{
+            background: greenyellow;
+        }
+        div{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background: white;
+            background-clip: padding-box;
+        }
+        /*默认情况下，背景会延伸到边框所在的区域下层。验证方法很简单，把背景色变成和边框不一样的颜色就可以看懂，比如红色。
+        解决方案：background-clip。初始值是border-box,意味着背景会被元素的border box（边框的外沿框）裁切掉。如果不希望背景侵入边框所在的范围，
+                    我们要做得就是把它的值设为 padding-box，这样浏览器就会用内边距的外沿来把背景裁切掉。
+        */
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
