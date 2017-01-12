@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6b12254-dbc6-4b41-ac08-3f566715375c" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\zhaozhao\css.md" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css-secrets/box-shadow-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css-secrets/box-shadow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flex布局/圣杯布局.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flex布局/网格布局demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flex布局/骰子练习all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flex布局/骰子练习col.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flex布局/骰子练习row.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="zhaozhao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,31 +40,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RgbaHsla.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RgbaHsla.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css-secrets/RgbaHsla.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46605292">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state vertical-scroll-proportion="-3.9705882">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="box-shadow.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-secrets/box-shadow.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.411764">
+              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/垂直居中/translate.html">
+      <file leaf-file-name="骰子练习col.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flex布局/骰子练习col.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state vertical-scroll-proportion="-4.882353">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translate1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/垂直居中/translate1.html">
+      <file leaf-file-name="骰子练习row.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flex布局/骰子练习row.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state vertical-scroll-proportion="-23.147058">
+              <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="网格布局demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flex布局/网格布局demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.323529">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="圣杯布局.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flex布局/圣杯布局.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21749137">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="骰子练习all.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flex布局/骰子练习all.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.5588236">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="box-shadow-demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css-secrets/box-shadow-demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.7058825">
+              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -113,6 +172,14 @@
         <option value="$PROJECT_DIR$/css-secrets/rgba/hsla.html" />
         <option value="$PROJECT_DIR$/css-secrets/RgbaHsla.html" />
         <option value="$PROJECT_DIR$/css.md" />
+        <option value="$PROJECT_DIR$/css-secrets/box-shadow-demo.html" />
+        <option value="$PROJECT_DIR$/css-secrets/box-shadow.html" />
+        <option value="$PROJECT_DIR$/flex布局/骰子练习.html" />
+        <option value="$PROJECT_DIR$/flex布局/骰子练习all.html" />
+        <option value="$PROJECT_DIR$/flex布局/骰子练习col.html" />
+        <option value="$PROJECT_DIR$/flex布局/骰子练习row.html" />
+        <option value="$PROJECT_DIR$/flex布局/网格布局demo.html" />
+        <option value="$PROJECT_DIR$/flex布局/圣杯布局.html" />
       </list>
     </option>
   </component>
@@ -124,8 +191,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="435" />
-    <option name="y" value="186" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -167,6 +234,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="zhaozhao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhaozhao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhaozhao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flex布局" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhaozhao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhaozhao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css-secrets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -242,7 +337,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="435" y="186" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12864584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -589,8 +684,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css-secrets/RgbaHsla.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46605292">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state vertical-scroll-proportion="-3.9705882">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-secrets/box-shadow-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7058825">
+          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css-secrets/box-shadow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.411764">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex布局/骰子练习all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5588236">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex布局/骰子练习col.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.882353">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex布局/骰子练习row.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.147058">
+          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex布局/网格布局demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.323529">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex布局/圣杯布局.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21749137">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding />
         </state>
       </provider>

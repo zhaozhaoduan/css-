@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            min-width: 50em;
+            text-align: center;
+        }
+        header,footer{
+            flex: 1;
+            background: coral;
+
+        }
+        .content{
+            display: flex;
+            flex: 8;
+        }
+        nav,aside{
+            flex: 0 0 12em;
+            background: brown;
+        }
+        main{
+            display: flex;
+            flex: 1;
+            background: chocolate;
+            flex-direction: column;
+            text-align: left;
+            padding: 1em;
+        }
+        .media{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        main p{
+            flex: 1;
+            margin: 0;
+            padding: 0 1em;
+        }
+        aside p{
+            align-self: flex-end;
+            flex: 1;
+        }
+        .media-body{
+            display: flex;
+            flex: 0 0 50%;
+        }
+        .media-body:nth-child(2){
+            flex-direction: row-reverse;
+        }
+        aside{
+            display: flex;
+            order: -1;
+            background: cadetblue;
+        }
+        @media (max-width: 768px) {
+            .content{
+                flex-direction: column;
+                flex: 1;
+            }
+            nav,aside,main{
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>圣杯布局</h1>
+    </header>
+    <div class="content">
+        <main>
+            <div class="media">
+                <div class="media-body">
+                    <img src="http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg" width="100px" height="80px" alt=""/>
+                    <p>Beatae commodi, cumque delectus eveniet minus modi nesciunt odio quia quidem quo repellat repellendus repudiandae rerum saepe voluptate? Fugit nam pariatur reprehenderit.</p>
+                </div>
+                <div class="media-body">
+                    <img src="http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg" width="100px" height="80px" alt=""/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci, doloribus ipsam necessitatibus omnis quidem quos voluptatibus? Animi cumque delectus est expedita, fugiat inventore optio provident recusandae rerum sed voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi, cumque delectus eveniet minus modi nesciunt odio quia quidem quo repellat repellendus repudiandae rerum saepe voluptate? Fugit nam pariatur reprehenderit.</p>
+                </div>
+                <div class="media-body">
+                    <img src="http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg" width="100px" height="80px" alt=""/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci, doloribus ipsam necessitatibus omnis quidem quos voluptatibus? Animi cumque delectus est expedita, fugiat inventore optio provident recusandae rerum sed voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi, cumque delectus eveniet minus modi nesciunt odio quia quidem quo repellat repellendus repudiandae rerum saepe voluptate? Fugit nam pariatur reprehenderit.</p>
+                </div>
+            </div>
+        </main>
+        <nav>
+            <p>我来固定底部</p>
+        </nav>
+        <aside>
+            <p>我来固定底部</p>
+        </aside>
+    </div>
+    <footer></footer>
+</body>
+</html>

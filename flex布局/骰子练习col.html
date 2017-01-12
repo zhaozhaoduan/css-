@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            background: palevioletred;
+            width: 200px;
+            height: 200px;
+            margin: 2em;
+            float: left;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+        }
+        .box1{
+            align-items: center;
+        }
+        .box2{
+            align-items: flex-end;
+        }
+        .box3{
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .box4{
+            align-items: center;
+        }
+        span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333333;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <span class="item"></span>
+</div>
+<div class="box box1">
+    <span class="item"></span>
+</div>
+<div class="box box2">
+    <span class="item"></span>
+</div>
+<div class="box box3">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+<div class="box box3 box4">
+    <span class="item"></span>
+    <span class="item"></span>
+</div>
+</body>
+</html>

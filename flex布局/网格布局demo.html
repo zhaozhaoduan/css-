@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .grid{
+            display: flex;
+            height: 5em;
+            background: beige;
+        }
+        .grid-cell{
+            flex: 1;
+            background: coral;
+            height: 4em;
+            margin: 0.5em;
+        }
+        .col-50{
+            flex: 0 0 50%;
+        }
+        .col-33{
+            flex: 0 0 33.3%;
+        }
+    </style>
+</head>
+<body>
+    <h1>基本网格布局</h1>
+    <div class="grid">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+    </div>
+    <br/>
+    <div class="grid">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+    </div>
+    <br/>
+    <div class="grid">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+    </div>
+
+    <h1>百分比布局</h1>
+    <div class="grid">
+        <div class="grid-cell col-50"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+    </div>
+    <div class="grid">
+        <div class="grid-cell col-33"></div>
+        <div class="grid-cell"></div>
+    </div>
+
+
+</body>
+</html>
