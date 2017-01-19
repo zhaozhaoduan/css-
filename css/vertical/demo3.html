@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div.main{
+            min-height: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5em;
+            border: 1px solid #333333;
+        }
+        .x1{display: table-cell; vertical-align: middle;height: 650px;border:1px solid #333;}
+        .x2{ width:100px; height: 100px; background: #f00;}
+
+        .list {
+            display: inline-block;
+            text-align: left;
+            border: #eee 1px solid;
+            height: 50px;
+            width: 400px;
+            padding: 0 5px;
+        }
+        .list span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .list span:last-child {
+            max-width: 250px;
+        }
+        .list:after {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium, animi architecto asperiores debitis eaque fugit libero magnam nam necessitatibus possimus, quam sed sit. Eaque ipsum libero nisi odio voluptas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci at autem consequatur, dignissimos illum ipsam laborum mollitia praesentium quae suscipit temporibus ullam voluptatem. Consequuntur debitis distinctio eligendi non porro.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cumque itaque recusandae repellendus veniam! Ab architecto asperiores at autem dolorem eaque et impedit inventore placeat quam reiciendis, tempora tempore voluptatibus!</p>
+        </div>
+    </div>
+    <br/>
+    <div class="x1">
+        <div class="x2">
+        </div>
+    </div>
+    <br/>
+    <div class="list">
+        <span>
+            <input type="radio"/>
+        </span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

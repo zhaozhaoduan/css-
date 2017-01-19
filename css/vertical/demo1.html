@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>多行文字垂直居中</title>
+    <style>
+        .list{
+            display: inline-block;
+            border: 1px solid #cccccc;
+            padding: 2em;
+        }
+        .inner .list:nth-child(2) {
+            margin-left: 2em;
+        }
+        .inner .list:nth-child(2) span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .inner .list:nth-child(2) span:nth-child(2){
+            max-width: 200px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="inner">
+        <div class="list">
+            <span><input type="radio"></span>
+            <span>我是文本</span>
+        </div>
+        <div class="list">
+            <span><input type="radio"></span>
+            <span>我是文本我是文本我是文本我是文本我是文本我是文本我是</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
