@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        pre{
+            background: #cecece;
+        }
+    </style>
+</head>
+<body>
+<blockquote>
+    <p>无论走到哪里，都应该记住，过去都是假的，回忆是一条没有尽头的路，一切以往的春天都不复存在，就连那最坚韧而又狂乱的爱情归根结底也不过是一种转瞬即逝的现实。</p>
+    <small>马尔克斯 ——《百年孤独》</small>
+</blockquote>
+
+1、单行显示带省略号
+<pre>.single-line{
+    width:100px;
+    display:block; //如果是块儿级元素可以不用加
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+这个代码需要固定宽度，或者设置最大宽度值。
+</pre>
+
+２、多行显示能控制行数
+<pre>
+.multi-line{
+    line-height: 130%; // 可能需要
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; //显示的行数
+    -webkit-box-orient: vertical;
+}
+</pre>
+
+3、强制内核渲染——增加一个meta标签 （http-equiv="x-ua-compatible" content="ie=edge,chrome=1"）<br/><br/>
+
+
+4、空白图片的base64
+<pre>
+data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==
+</pre>
+
+5、不要滚动条
+<pre>
+html ::-webkit-scrollbar {
+    /*不要滚动条*/
+    display: none;
+}
+@-ms-viewport {
+    width: device-width;
+}
+</pre>
+
+6、关于input/textarea
+<pre>
+/*取消输入框默认有内部阴影*/
+input,
+textarea {
+    border: 0; /* 方法1 */
+    -webkit-appearance: none; /* 方法2 */
+}
+
+：
+/*取消input和textarea的聚焦边框*/
+input{outline:none}
+
+/*取消textarea可拖动放大*/
+textarea{resize:none}
+
+/*placeholder设置颜色*/
+textarea::-webkit-input-placeholder{   color:#be916a; }
+
+/*input placeholder文字垂直居中(Mobile & PC)*/
+input{
+　　line-height: normal; /* for non-ie */
+　　line-height: 22px\9; /* for ie */
+}
+
+/*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+</pre>
+
+7、图片灰度
+<pre>
+-webkit-filter:grayscale(100%)
+filter:gray;
+filter:grayscale(100%)
+</pre>
+
+8、指示元素边界
+<pre>
+[].forEach.call($$("*"),function(a){a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)})
+放到命令行运行
+</pre>
+
+9、移动端去掉长按选择
+<pre>
+div,span,p,img{   -webkit-user-select: none;/*禁用手机浏览器的用户选择功能 */   -moz-user-select: none; }
+</pre>
+
+10、禁止长按链接与图片弹出菜单
+<pre>
+a, img {
+-webkit-touch-callout: none;
+/*禁止长按链接与图片弹出菜单*/
+}
+</pre>
+
+11、display:inline-block 间隙去除
+<pre>
+.wrapper{
+　　font-size:0
+}
+.inlineblock{
+display: inline-block;
+letter-spacing: normal;
+word-spacing: normal;
+}
+<div class='wrapper'>
+    <div class="inlineblock"></div>
+</div>
+</pre>
+
+12、无限滚动
+<pre>
+.revolve{
+animation: revolve 2s linear infinite;
+}
+@-webkit-keyframes revolve {
+from {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+
+to {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+@keyframes revolve {
+from {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+
+to {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+</pre>
+
+13、清除浮动
+<pre>
+.clearfix:before, .clearfix:after {   content: " "; /* 1 */   display: table; /* 2 */ }  .clearfix:after {   clear: both; }
+</pre>
+
+14、FontAwesome类
+<pre>
+<i class="fa fa-icon"></i>
+
+固定宽度：fa-fw
+加边框：fa-border
+左右浮动：fa-pull-lef/fa-pull-right
+旋转：fa-spin
+转动：fa-rotate-90/fa-rotate-180/fa-rotate-270/
+镜像：fa-flip-horizontal/fa-flip-vertical
+反色：fa-inverse
+</pre>
+
+15、BEM规范
+<pre>
+一句就够了
+block__element--modifier
+</pre>
+
+16、移动端overflow-y 滑动时能顺滑点
+<pre>
+ -webkit-overflow-scrolling:touch;
+</pre>
+
+17、画1px的细线
+<pre>
+.border1px{  position: relative;}
+.border1px:after{
+    content:"";
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    border-bottom:1px solid red;
+    border-left:1px solid red;
+    -webkit-transform:scaleY(.5);
+    -webkit-transform-origin:0 0;
+}
+</pre>
+
+18、文字上划斜线
+<pre>
+这个常用于电商网站比如将原价用斜线划掉，这里我们用到before
+.diagonal:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 42%;
+    right: -10%;
+    border-top: 2px solid;
+    border-color: #333;
+    transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+}
+</pre>
+19、占位图生成地址
+<pre>
+http://www.atool.org/placeholder.png?size=500x200&text=aTool全站广告位征集&&bg=836&fg=fff
+http://placehold.it/640x320 // 推荐
+http://placekitten.com/200/300
+</pre>
+</body>
+</html>
