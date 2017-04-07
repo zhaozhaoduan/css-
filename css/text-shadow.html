@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text-shadow</title>
+	<meta charset="utf-8" />
+  <style type="text/css">
+    .demo{
+      background: #666;
+      width: 100%;
+      padding: 30px;
+      font: bold 55px/100% '微软雅黑';
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .demo .demop{
+      display: inline-block;
+      margin: 0 20px 20px 0;
+    }
+    .demo1{
+      text-shadow: red 0 1px 0;
+    }
+    .demo2{
+      text-shadow: 0 0 20px red;
+    }
+    .demo3{
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+    }
+    .demo4{
+      color: #000;
+      text-shadow: 0 1px 1px #fff;
+    }
+    .demo5{
+      color: #ccc;
+      text-shadow: -1px -1px 0 #fff,1px 1px 0 #333,1px 1px 0 #444;
+    }
+    .demo6{
+      color: transparent;
+      text-shadow: 0 0 5px #f96;
+    }
+    .demo7{
+      color: transparent;
+      text-shadow:0 0 6px #F96, -1px -1px  #FFF, 1px -1px  #444;
+    }
+    .demo8 {
+      color: #566F89;
+      background: #C5DFF8;
+      text-shadow: 1px 1px 0 #E4F1FF;
+    }
+    .demo9 {
+      color: #fff;
+      text-shadow: 1px 1px 0 #f96,-1px -1px 0 #f96; 
+    }
+    .demo10 {
+      color: #fff;
+      text-shadow: 1px 1px rgba(197, 223, 248,0.8),2px 2px rgba(197, 223, 248,0.8),3px 3px rgba(197, 223, 248,0.8),4px 4px rgba(197, 223, 248,0.8),5px 5px rgba(197, 223, 248,0.8),6px 6px rgba(197, 223, 248,0.8);
+    }
+    .demo11 {
+      color: #eee;
+      text-shadow: 5px 5px 0 #666, 7px 7px 0 #eee;
+    }
+    .demo12 {
+      color: rgba(255, 179, 140,0.5);
+      text-shadow: 3px 3px 0 rgba(180,255,0,0.5);
+    }
+    .demo13{
+      color: #fff;
+      text-shadow: -1px -1px rgba(197, 223, 248,0.8),-2px -2px rgba(197, 223, 248,0.8),-3px -3px rgba(197, 223, 248,0.8),-4px -4px rgba(197, 223, 248,0.8),-5px -5px rgba(197, 223, 248,0.8),-6px -6px rgba(197, 223, 248,0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="demo">
+     <p>text-shadow: color Xoffset Yoffset Blur 或者 Xoffset Yoffset Blur Color，其中水平和竖直方向的偏移指阴影的延伸距离，可以为负值；Blur代表阴影模糊值，不可以为负值，用来指定模糊效果的作用距离.</p>
+     <p class="demop demo1">1、text-shadow</p>
+     <p class="demop demo2">2、text-shadow</p>
+     <p class="demop demo3">3、text-shadow</p>
+     <p class="demop demo4">4、text-shadow</p>
+     <p class="demop demo5">5、text-shadow</p>
+     <p class="demop demo6">6、text-shadow</p>
+     <p class="demop demo7">7、text-shadow</p>
+     <p class="demop demo8">8、text-shadow</p>
+     <p class="demop demo9">9、text-shadow
+      <!-- 运用两个阴影，第一个向左上投影，而第二向右下投影，还需注意，制作描边的阴影效果我们不使用模糊值 -->
+     </p>
+     <p class="demop demo10">10、text-shadow</p>
+     <p class="demop demo13">13、text-shadow
+      <!-- 使用多个阴影，并把阴影色设置相同，给其使用rgba色效果更佳 -->
+     </p>
+     <p class="demop demo11">11、text-shadow
+      <!-- 第一个阴影色和背景色相同；文本前景色和第二个阴影色相同 -->
+     </p>
+     <p class="demop demo12">12、text-shadow</p>
+  </div>
+ demo源于http://www.w3cplus.com/blog/52.html
+</body>
+</html>

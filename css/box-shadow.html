@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>box-shadow</title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+    .parent{
+      width: 400px;
+      height: 400px;
+      background: #FF6600;
+      border: 1px solid #ccc;
+    }
+    .child{
+      width: 100px;
+      height: 100px;
+      background: #FAF9F2;
+      margin: 10px auto;
+      box-shadow: 50px 50px green;
+    }
+    .center{
+      position: center;
+      left: 50px;
+    }
+    /*
+      IE9以下是不支持CSS3的box-shadow
+      为了处理这个兼容问题，我们可以在IE下使用IE的shadow阴影滤镜来实现
+      详见：http://www.w3cplus.com/content/css3-box-shadow
+      或者使用jQuery的插件jquery.boxshadow.js配合jQuery来解决ie9以下的兼容问题
+    */
+    .demo{
+      width: 100px;
+      height: 50px;
+      background: #f69;
+    }
+    .demo1{
+      -webkit-box-shadow: -2px 0 0 green,
+      0 -2px 0 blue,
+      0 2px 0 red,
+      2px 0 0 yellow;
+      margin: 30px;
+    }
+    .demo2{
+      -webkit-box-shadow: -2px 0 5px green,
+      0 -2px 5px blue,
+      0 2px 5px red,
+      2px 0 5px yellow;
+      margin: 30px;
+    }
+    img{
+      box-shadow: inset 0 0 5px 1px red;
+      display: inline-block;
+      width: 50%;
+    }
+    div img{
+      width: 100%;
+    }
+    .shadow{
+      box-shadow: inset 0 0 10px red;
+      display: inline-block;
+      margin: 5vh 0 0 5vh;
+      width: 400px;
+      overflow: auto;
+    }
+    .shadow img{
+      position: relative;
+      z-index: -1;
+    }
+    .shadow-img{
+      width: 400px;
+      position: relative;
+      display: inline-block;
+    }
+    .shadow-img:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 0 5px 1px red;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+    <div class="demo demo1"></div>
+    <div class="demo demo2"></div>
+    <!-- <img src="../img/zhang.jpg"> -->
+    对图片设置box-shadow是没有任何效果的
+  </div>
+  <div class="shadow">
+      <img src="../img/zhang.jpg">
+    </div>
+    <div class="shadow-img">
+      <img src="../img/zhang.jpg">
+    </div>
+</body>
+</html>

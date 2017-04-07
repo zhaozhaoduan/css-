@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        @-webkit-keyframes typing {
+            from {
+                width: 100%
+            }
+            to {
+                width: 0
+            }
+        }
+
+        @-webkit-keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent
+            }
+            50% {
+                border-color: black
+            }
+        }
+
+        body {
+            font-family: Consolas, monospace;
+        }
+
+        h1 {
+            position: relative;
+            float: left;
+            font-size: 150%;
+        }
+
+        h1 span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            background: white;
+            /* same as background */
+            border-left: .1em solid black;
+            box-sizing: border-box;
+            -webkit-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+            blink-caret 1s step-end infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Typing animation by Lea Verou.<span>&nbsp;</span></h1> </body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        img {
+            width: 128px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+            -webkit-transition: opacity 1s, -webkit-transform 1s;
+            -moz-transition: opacity 1s, -moz-transform 1s;
+            transition: opacity 1s, transform 1s;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .stage_area {
+            width: 900px;
+            min-height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 100px 50px;
+            background-color: #f0f0f0;
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, .35);
+            -webkit-perspective: 800px;
+            -moz-perspective: 800px;
+            perspective: 800px;
+            -webkit-transition: top .5s;
+            position: relative;
+            top: 0;
+        }
+
+        .container {
+            width: 128px;
+            height: 100px;
+            margin-left: -64px;
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            transition: transform 1s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            position: absolute;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage_area" id="stage">
+        <div class="container" id="container">
+            <!-- <img src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm8.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm3.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm4.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm6.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm7.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm10.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm13.jpg" alt="">
+           <img src="http://image.zhangxinxu.com/image/study/s/s128/mm15.jpg" alt=""> --></div>
+    </div>
+    <script type="text/javascript">
+        var randomHsl = function() {
+                return "hsla(" + Math.round(360 * Math.random()) + "," + "60%, 50%, .75)";
+            }
+            // CSS transform变换应用
+            ,
+            transform = function(element, value, key) {
+                key = key || "Transform";
+                ["Moz", "O", "Ms", "Webkit", ""].forEach(function(prefix) {
+                    element.style[prefix + key] = value;
+                });
+                return element;
+            }
+            // 浏览器选择器API
+            ,
+            $ = function(selector) {
+                return document.querySelector(selector);
+            },
+            $$ = function(selector) {
+                return document.querySelectorAll(selector);
+            };
+        // 显示图片
+        var htmlPic = '',
+            arrayPic = [1, 8, 3, 4, 6, 7, 10, 13, 15],
+            rotate = 360 / arrayPic.length;
+        arrayPic.forEach(function(i) {
+            htmlPic = htmlPic + '<img id="piece' + i + '" src="http://image.zhangxinxu.com/image/study/s/s128/mm' + i + '.jpg" class="piece" />';
+        });
+        // 元素
+        var eleStage = $("#stage"),
+            eleContainer = $("#container"),
+            indexPiece = 0;
+        // 元素
+        var elePics = $$(".piece"),
+            transZ = 64 / Math.tan((rotate / 2 / 180) * Math.PI); //每张图片宽64
+        eleContainer.innerHTML = htmlPic;
+        eleContainer.addEventListener("click", function() {
+            transform(this, "rotateY(" + (-1 * rotate * ++indexPiece) + "deg)");
+        });
+        arrayPic.forEach(function(i, j) {
+            transform($("#piece" + i), "rotateY(" + j * rotate + "deg) translateZ(" + (transZ + 20) + "px)");
+        });
+    </script> <a href="http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/">原文</a> </body>
+
+</html>
+</body>
+
+</html>

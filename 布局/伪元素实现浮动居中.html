@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div.p{
+            width: 500px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+        div div{
+            display: inline-block;
+            width: 240px;
+        }
+        .l:before,.r:before{
+            content: '';
+            width: 125px;
+            height: 250px;
+        }
+        .l:before{
+            float: right;
+        }
+        .r:before{
+            float: left;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+        <img src="http://image.zhangxinxu.com/image/blog/201309/2013-09-30_145801.png" alt=""/>
+        <div class="l">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur esse illo ipsum itaque, maxime officiis provident qui recusandae unde veritatis voluptatibus. Cum deleniti doloribus ex illum impedit. Eaque, ipsum!</div>
+        <div class="r">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi assumenda cumque dignissimos, dolores eius exercitationem fugiat illo minus modi odit perspiciatis placeat quia quo quod repudiandae sequi velit veritatis?</div>
+    </div>
+</body>
+</html>
